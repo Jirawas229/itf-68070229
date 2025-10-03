@@ -7,12 +7,43 @@
     <link rel ="stylesheet"
         href="styles.css">
 </head>
-<script src="script.js"></script>
 <body>
     <nav>
         <p>68070229</p>
-        <h2>ITF website</h2>
-        <p>week 14</p>
-    </nav>
+        <h2 id="web-title">ITF Website</h2>
+        <p>Week 14</p>
+    </nav>    
+    <div class="container">
+        <h1>ITF Simple Bank</h1>
+        <p>Welcome to 68070229 website!</p>
+        <hr>
+        <textarea id="preview" name="area" row="100" cols="80" placeholder="your bank account"></textarea>
+    </div>
+    <div class="con2">
+        <div>
+            <h1>Account Overview</h1>
+            <h2>Account Information</h2>
+            <p>Name: Jirawas Thanomchoeichom</p>
+            <p>Type: Saving Account</p>
+            <h2>Balance Information</h2>
+            <label for="in1">Current Account Balance :</label>
+            <input type="text" id="in1">
+            <button type="button">Change</button>
+            <h2>Bank Op</h2>
+            <select>
+                <option value="Deposit">Deposit</option>
+                <option value="Withdraw">Withdraw</option>
+            </select>
+            <input type="text" id="in2">
+            <button type="button">Proceed</button>
+        </div>
+        <div>
+            <h1>Financial Tools</h1>
+            <h2>Currency Converter</h2>
+            <label for="in3">Input Balance :</label>
+            <input type="text" id="in3">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

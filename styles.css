@@ -1,3 +1,20 @@
 nav {
-    background-color: aquamarine;
+    background-color:darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    color: whitesmoke;
+}
+ body {
+    margin: 0;
+ }
+
+.container {
+    margin: 15px 60px;
+}
+
+.con2 {
+    display: grid;
+    margin-left: 60px;
 }
