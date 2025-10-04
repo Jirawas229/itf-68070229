@@ -11,7 +11,8 @@ nav {
  }
 
 .container {
-    margin: 15px 60px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .con2 {
@@ -52,3 +53,23 @@ nav {
     margin-top: 25px;
     display: block;
 }
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.im4 {
+    display: flex;
+}
+
+.im4 img {
+    margin-right: 10px;
+    margin-top: 25px;
+    display: block;
+}
+
+.text4 {
+    display: grid;
+}
+

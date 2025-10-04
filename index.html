@@ -17,13 +17,13 @@
         <h1>ITF Simple Bank</h1>
         <p>Welcome to 68070229 website!</p>
         <hr>
-        <textarea id="preview" name="area" row="100" cols="80" placeholder="your bank account"></textarea>
+        <textarea id="preview" name="area" row="100" cols="200" placeholder="your bank account"></textarea>
     </div>
     <div class="con2">
         <div>
             <h1>Account Overview</h1>
             <div class="im1">
-                <image src="user.png" width="100" height="100"></image>
+                <image src="picture/user.png" width="100" height="100"></image>
                 <div class="text1">
                 <h2>Account Information</h2>
                 <p>Name: Jirawas Thanomchoeichom</p>
@@ -32,35 +32,60 @@
             </div>
             
             <div class="im2">
-                <image src="briefcase.png" width="100" height="100"></image>
+                <image src="picture/briefcase.png" width="100" height="100"></image>
                 <div class="text2">
-                <h2>Balance Information</h2>
-                <label for="in1">Current Account Balance :</label>
-                <input type="text" id="in1">
-                <button type="button">Change</button>
+                    <h2>Balance Information</h2>
+                    <div>
+                        <label for="in1">Current Account Balance :</label>
+                        <input type="text" id="in1">
+                    </div>
+                    <div>
+                        <label for="in2">Current Cash Balance :</label>
+                        <input type="text" id="in2">
+                    </div>
+                    <button type="button">Change</button>
                 </div>
             </div>
 
             <div class="im3">
-                <image src="toolbox.png" width="100" height="100"></image>
+                <image src="picture/toolbox.png" width="100" height="100"></image>
                 <div class="text3">
-                <h2>Bank Op</h2>
+                <h2>Bank Operation</h2>
                 <select>
                     <option value="Deposit">Deposit</option>
                     <option value="Withdraw">Withdraw</option>
                 </select>
-                <input type="text" id="in2">
+                <input type="text">
                 <button type="button">Proceed</button>
                 </div>
             </div>
         </div>
         <div>
-            <h1>Financial Tools</h1>
-            <h2>Currency Converter</h2>
-            <label for="in3">Input Balance :</label>
-            <input type="text" id="in3">
+        <h1>Financial Tools</h1>
+            <div class="im4">
+                <image image src="picture/coins.png" width="100" height="100"></image>
+                <div class="text4">
+                    <h2>Currency Converter</h2>
+                    <div>
+                    <label for="in3">Input Balance :</label>
+                    <input type="text" id="in3">
+                    </div>
+                    <div>
+                    <label for="in4">Output Balance :</label>
+                    <input type="text" id="in4">
+                    </div>
+                    <div class="text4_1">
+                        <label for="se_2">Input Currency</label>
+                        <select id="se_2">
+                            <option value="USD">USD</option>
+                            <option value="THB">THB</option>
+                        </select>
+                        <button type="button">Convert</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="picure/script.js"></script>
 </body>
 </html>
