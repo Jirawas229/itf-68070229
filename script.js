@@ -31,7 +31,7 @@ document.getElementById("BankOp").onclick = function(){
         currenacc += bankopin
         currencash -= bankopin
         document.getElementById("premon").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}`}
-        document.getElementById("preview").value += `You withdraw ${bankopin} Baht\n`
+        document.getElementById("preview").value += `You deposit ${bankopin} Baht\n`
     } else {
         if(currenacc < bankopin){
             window.alert("You don't have enough money to withdraw")
