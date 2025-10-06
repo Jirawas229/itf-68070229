@@ -18,7 +18,8 @@ document.getElementById("Submitconvert").onclick = function(){
 document.getElementById("balanceinformation").onclick = function(){
     currenacc = Number(document.getElementById("in1").value)
     currencash = Number(document.getElementById("in2").value)
-    document.getElementById("preview").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}`
+    document.getElementById("preview").value += `You have changed your account balance to ${currenacc}\nand your cash balance to ${currencash}\n\n`
+    document.getElementById("premon").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}`
 } 
 
 document.getElementById("BankOp").onclick = function(){
@@ -29,13 +30,15 @@ document.getElementById("BankOp").onclick = function(){
         } else {
         currenacc += bankopin
         currencash -= bankopin
-        document.getElementById("preview").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}\n\nYou deposit ${bankopin} Baht`}
+        document.getElementById("premon").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}`}
+        document.getElementById("preview").value += `You withdraw ${bankopin} Baht\n`
     } else {
         if(currenacc < bankopin){
             window.alert("You don't have enough money to withdraw")
         } else {
         currenacc -= bankopin
         currencash += bankopin
-        document.getElementById("preview").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}\n\nYou withdraw ${bankopin} Baht`}
+        document.getElementById("premon").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}\n`}
+        document.getElementById("preview").value += `You withdraw ${bankopin} Baht\n`
     }
 }
