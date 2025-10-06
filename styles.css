@@ -1,13 +1,15 @@
 nav {
-    background-color:darkblue;
+    background-color:rgb(85,218,184);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    color: whitesmoke;
+    color: rgb(16, 133, 88);
 }
- body {
+body {
     margin: 0;
+    background-color: rgb(211,255,206);
+    font-family:'Lexend';
  }
 
 .container {
@@ -17,7 +19,8 @@ nav {
 
 .con2 {
     display: flex;
-    margin-left: 60px;
+    margin: 0;
+    justify-content: space-evenly;
 }
 
 .im1 {
@@ -57,6 +60,9 @@ nav {
 textarea {
     resize: none;
     height: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .im4 {
@@ -73,3 +79,6 @@ textarea {
     display: grid;
 }
 
+.leftside {
+    padding: 20px;
+}
