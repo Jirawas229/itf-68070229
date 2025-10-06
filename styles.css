@@ -60,7 +60,7 @@ body {
 textarea {
     resize: none;
     height: 100px;
-    display: flex;
+    display: grid;
     margin-left: auto;
     margin-right: auto;
 }
@@ -77,8 +77,4 @@ textarea {
 
 .text4 {
     display: grid;
-}
-
-.leftside {
-    padding: 20px;
 }
