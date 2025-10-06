@@ -18,7 +18,7 @@
         <h1>ITF Simple Bank</h1>
         <p>Welcome to 68070229 website!</p>
         <hr>
-        <textarea id="preview" name="area" row="100" cols="200" placeholder="your bank account"></textarea>
+        <textarea id="preview" name="area" row="100" cols="200" placeholder="change your balance information first"></textarea>
     </div>
     <div class="con2">
         <div clas="leftside">
@@ -44,7 +44,7 @@
                         <label for="in2">Current Cash Balance :</label>
                         <input type="text" id="in2">
                     </div>
-                    <button type="button">Change</button>
+                    <button type="button" id="balanceinformation">Change</button>
                 </div>
             </div>
 
@@ -52,12 +52,12 @@
                 <image src="picture/toolbox.png" width="100" height="100"></image>
                 <div class="text3">
                 <h2>Bank Operation</h2>
-                <select>
+                <select id="BankOpType">
                     <option value="Deposit">Deposit</option>
                     <option value="Withdraw">Withdraw</option>
                 </select>
-                <input type="text">
-                <button type="button">Proceed</button>
+                <input type="text" id="BankOpIn">
+                <button type="button" id="BankOp">Proceed</button>
                 </div>
             </div>
         </div>
@@ -81,12 +81,12 @@
                             <option value="USD">USD</option>
                             <option value="THB">THB</option>
                         </select>
-                        <button type="button">Convert</button>
+                        <button type="button" id="Submitconvert">Convert</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="picure/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
