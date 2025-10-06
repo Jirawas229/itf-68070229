@@ -24,12 +24,18 @@ document.getElementById("balanceinformation").onclick = function(){
 document.getElementById("BankOp").onclick = function(){
     bankopin = Number(document.getElementById("BankOpIn").value)
     if(document.getElementById("BankOpType").value == "Deposit"){
+        if(currencash < bankopin){
+            window.alert("You don't have enough money to deposit")
+        } else {
         currenacc += bankopin
         currencash -= bankopin
-        document.getElementById("preview").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}`
+        document.getElementById("preview").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}\n\nYou deposit ${bankopin} Baht`}
     } else {
+        if(currenacc < bankopin){
+            window.alert("You don't have enough money to withdraw")
+        } else {
         currenacc -= bankopin
         currencash += bankopin
-        document.getElementById("preview").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}`
+        document.getElementById("preview").value = `Your account balance is ${currenacc}\nYour cash balance is ${currencash}\n\nYou withdraw ${bankopin} Baht`}
     }
 }
